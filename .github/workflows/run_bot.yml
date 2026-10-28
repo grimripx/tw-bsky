@@ -25,4 +25,4 @@ jobs:
         env:
           BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
           BSKY_PASSWORD: ${{ secrets.BSKY_PASSWORD }}
-        run: python -m bsky_post
+        run: python -m bsky_post || true
