@@ -1,3 +1,10 @@
 {
-    "Audi Revolut F1 Team": {"bsky_u": "notaudif1.bsky.social", "bsky_p": "tmkf-m6id-6zfc-32xf" }
+    "Audi Revolut F1 Team": {
+        "bsky_u": "notaudif1.bsky.social", 
+        "bsky_p": "tmkf-m6id-6zfc-32xf" 
+    },
+    "Ottawa Senators": {
+        "bsky_u": "areastix.bsky.social", 
+        "bsky_p": "aje4-g4pj-zy5d-ehul"
+    }
 }
