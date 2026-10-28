@@ -2,8 +2,8 @@ name: tw-bsky
 
 on:
   schedule:
-    - cron: '*/5 * * * *' # ตั้งเวลาให้บอทตื่นมาเช็กข้อมูลทุก ๆ 5 นาที
-  workflow_dispatch: # เปิดปุ่ม Run workflow ให้เรากดรันเองได้ด้วยมือ
+    - cron: '*/5 * * * *' # สั่งบอทตื่นมาเช็กข้อมูลอัตโนมัติทุกๆ 5 นาที
+  workflow_dispatch: # เปิดปุ่มกดสั่งรันด้วยมือได้เอง
 
 jobs:
   sync:
@@ -25,4 +25,4 @@ jobs:
         env:
           BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
           BSKY_PASSWORD: ${{ secrets.BSKY_PASSWORD }}
-        run: python main.py
+        run: python -m bsky_post
